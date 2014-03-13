@@ -130,6 +130,32 @@
     "javaRuntime": true
   },
   {
+    "symbolicName": "jaws-bin",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "86d678d0d715b63566f09fef315c342dad2cbe26",
+    "jarFileModificationDate": "2014-03-13T11:03:12.095-07:00",
+    "location": "C:\\Users\\Ephraim\\Downloads\\jaws-bin.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "acba57835f18f9baca84e63b54b010b7bcddc96f",
+    "jarFileModificationDate": "2012-09-10T15:09:11.337-07:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -153,19 +179,6 @@
     "jarFileFingerprint": "f6734262725d0c84f5e43cdeab419da9b80b299c",
     "jarFileModificationDate": "2012-09-10T15:09:11.441-07:00",
     "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "acba57835f18f9baca84e63b54b010b7bcddc96f",
-    "jarFileModificationDate": "2012-09-10T15:09:11.337-07:00",
-    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
     "javaRuntime": true
   },
   {

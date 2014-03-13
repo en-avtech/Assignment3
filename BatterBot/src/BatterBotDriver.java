@@ -886,6 +886,7 @@ public class BatterBotDriver
 		
 		//bat.setup();
 		bat.setupInterview();
+		System.setProperty("wordnet.database.dir", "C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
 		
 		try
 		{

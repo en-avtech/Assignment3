@@ -382,9 +382,9 @@ public class BatterBotDriver
 					}
 				};
 				
-				String[] sentence2 = {"Describe a difficult experience at" , "and how you handled it."};
+				String[] sentence2 = {"Describe a difficult experience at " , " and how you handled it."};
 				String[][] bucket2 = {{"home","work"}};
-				String[] keys2 = {"abc","overqualified"};
+				String[] keys2 = {"abc"};
 		
 				ResponseTemplate response2 = new ResponseTemplate(sentence2, bucket2, keys2)
 				{
@@ -399,7 +399,7 @@ public class BatterBotDriver
 					}
 				};
 				
-				String[] sentence3 = {"Describe yourself"};
+				String[] sentence3 = {"Describe yourself."};
 				String[][] bucket3 = null;
 				String[] keys3 = {"abc"};
 		
@@ -416,7 +416,7 @@ public class BatterBotDriver
 					}
 				};
 				
-				String[] sentence4 = {"Describe your best boss and your worst boss"};
+				String[] sentence4 = {"Describe your best boss and your worst boss."};
 				String[][] bucket4 = null;
 				String[] keys4 = {"abc"};
 		
@@ -425,6 +425,449 @@ public class BatterBotDriver
 					public double scaleRules()
 					{
 						if(questionsAsked()<5)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};				
+				response4.valediction=true;
+				
+				String[] sentence5 = {"Describe your work style."};
+				String[][] bucket5 = null;
+				String[] keys5 = {"abc"};
+		
+				ResponseTemplate response5 = new ResponseTemplate(sentence5, bucket5, keys5)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence6 = {"Do you prefer to work alone or on a team?"};
+				String[][] bucket6 = null;
+				String[] keys6 = {"abc"};
+		
+				ResponseTemplate response6 = new ResponseTemplate(sentence6, bucket6, keys6)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence7 = {"Do you take work home with you?"};
+				String[][] bucket7 = {{"work","home","with"}};
+				String[] keys7 = {"abc"};
+		
+				ResponseTemplate response7 = new ResponseTemplate(sentence7, bucket7, keys7)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence8 = {"Have you ever had difficulty working with a manager?"};
+				String[][] bucket8 = null;
+				String[] keys8 = {"abc"};
+		
+				ResponseTemplate response8 = new ResponseTemplate(sentence8, bucket8, keys8)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence9 = {"Have you gotten angry at work? What happened?"};
+				String[][] bucket9 = null;
+				String[] keys9 = {"abc"};
+		
+				ResponseTemplate response9 = new ResponseTemplate(sentence9, bucket9, keys9)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence10 = {"How fo you handle pressure?"};
+				String[][] bucket10 = {{"home","work"}};
+				String[] keys10 = {"abc"};
+		
+				ResponseTemplate response10 = new ResponseTemplate(sentence10, bucket10, keys10)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence11 = {"How do you measure success?"};
+				String[][] bucket11 = {{"home","work"}};
+				String[] keys11 = {"abc"};
+		
+				ResponseTemplate response11 = new ResponseTemplate(sentence11, bucket11, keys11)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence12 = {"How long do you expect to work for this company?"};
+				String[][] bucket12 = {{"home","work"}};
+				String[] keys12 = {"abc"};
+		
+				ResponseTemplate response12 = new ResponseTemplate(sentence12, bucket12, keys12)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence13 = {"How much do you expect to get paid?"};
+				String[][] bucket13 = {{"home","work"}};
+				String[] keys13 = {"abc"};
+		
+				ResponseTemplate response13 = new ResponseTemplate(sentence13, bucket13, keys13)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence14 = {"How would you descibe the place at which you work?"};
+				String[][] bucket14 = {{"home","work"}};
+				String[] keys14 = {"abc"};
+		
+				ResponseTemplate response14 = new ResponseTemplate(sentence14, bucket14, keys14)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence15 = {"How would you descibe yourself?"};
+				String[][] bucket15 = {{"home","work"}};
+				String[] keys15 = {"abc"};
+		
+				ResponseTemplate response15 = new ResponseTemplate(sentence15, bucket15, keys15)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence16 = {"How would you handle it if your boss was wrong?"};
+				String[][] bucket16 = {{"home","work"}};
+				String[] keys16 = {"abc"};
+		
+				ResponseTemplate response16 = new ResponseTemplate(sentence16, bucket16, keys16)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence17 = {"If people who know you were asked why you should be hired, what would they say?"};
+				String[][] bucket17 = {{"home","work"}};
+				String[] keys17 = {"abc"};
+		
+				ResponseTemplate response17 = new ResponseTemplate(sentence17, bucket17, keys17)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence18 = {"Is there a type of work environment which you prefer?"};
+				String[][] bucket18 = {{"home","work"}};
+				String[] keys18 = {"abc"};
+		
+				ResponseTemplate response18 = new ResponseTemplate(sentence18, bucket18, keys18)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence19 = {"Is there anything else I can tell you about the job and the company?"};
+				String[][] bucket19 = {{"home","work"}};
+				String[] keys19 = {"abc"};
+		
+				ResponseTemplate response19 = new ResponseTemplate(sentence19, bucket19, keys19)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence20 = {"Tell me why you want to work here."};
+				String[][] bucket20 = {{"home","work"}};
+				String[] keys20 = {"abc"};
+		
+				ResponseTemplate response20 = new ResponseTemplate(sentence20, bucket20, keys20)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence21 = {"What are you looking for in you next position?"};
+				String[][] bucket21 = {{"home","work"}};
+				String[] keys21 = {"abc"};
+		
+				ResponseTemplate response21 = new ResponseTemplate(sentence21, bucket21, keys21)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence22 = {"What are you passionate about?"};
+				String[][] bucket22 = {{"home","work"}};
+				String[] keys22 = {"abc"};
+		
+				ResponseTemplate response22 = new ResponseTemplate(sentence22, bucket22, keys22)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence23 = {"What are your goals for the future?"};
+				String[][] bucket23 = {{"home","work"}};
+				String[] keys23 = {"abc"};
+		
+				ResponseTemplate response23 = new ResponseTemplate(sentence23, bucket23, keys23)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence24 = {"What are your salary requirements?"};
+				String[][] bucket24 = {{"home","work"}};
+				String[] keys24 = {"abc"};
+		
+				ResponseTemplate response24 = new ResponseTemplate(sentence24, bucket24, keys24)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence25 = {"What can you do for this company?"};
+				String[][] bucket25 = {{"home","work"}};
+				String[] keys25 = {"abc"};
+		
+				ResponseTemplate response25 = new ResponseTemplate(sentence25, bucket25, keys25)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence26 = {"What can you contribute to this company?"};
+				String[][] bucket26 = {{"home","work"}};
+				String[] keys26 = {"abc"};
+		
+				ResponseTemplate response26 = new ResponseTemplate(sentence26, bucket26, keys26)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence27 = {"What challenges are you looking for in your next job?"};
+				String[][] bucket27 = {{"home","work"}};
+				String[] keys27 = {"abc"};
+		
+				ResponseTemplate response27 = new ResponseTemplate(sentence27, bucket27, keys27)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence28 = {"What did you like or dislike about your previous job?"};
+				String[][] bucket28 = {{"home","work"}};
+				String[] keys28 = {"abc"};
+		
+				ResponseTemplate response28 = new ResponseTemplate(sentence28, bucket28, keys28)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence29 = {"What do you expect from a supervisor?"};
+				String[][] bucket29 = {{"home","work"}};
+				String[] keys29 = {"abc"};
+		
+				ResponseTemplate response29 = new ResponseTemplate(sentence29, bucket29, keys29)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence30 = {"What do you find are the most difficult decisions to make?"};
+				String[][] bucket30 = {{"home","work"}};
+				String[] keys30 = {"abc"};
+		
+				ResponseTemplate response30 = new ResponseTemplate(sentence30, bucket30, keys30)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
 						{
 							return 0;
 						}
@@ -443,6 +886,7 @@ public class BatterBotDriver
 		
 		//bat.setup();
 		bat.setupInterview();
+		System.setProperty("wordnet.database.dir", "C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
 		
 		try
 		{
