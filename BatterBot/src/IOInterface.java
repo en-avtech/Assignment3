@@ -23,5 +23,6 @@ public interface IOInterface
 	 */
 	public String read();
 	
+	public void close();
 	
 }

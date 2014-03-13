@@ -21,5 +21,10 @@ public class IOconsole implements IOInterface
 	{
 		return scan.nextLine();
 	}
+	
+	public void close()
+	{
+		scan.close();
+	}
 
 }

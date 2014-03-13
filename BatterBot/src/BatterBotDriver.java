@@ -38,6 +38,8 @@ public class BatterBotDriver
 		String input;
 		ResponseTemplate template = null;
 		
+		//IO.print("Hello");
+		
 		while(true)
 		{
 			//This is expected to block waiting for input
@@ -62,6 +64,8 @@ public class BatterBotDriver
 			if(template.isValediction())
 				break;
 		}
+		
+		IO.close();
 	}
 	
 	
@@ -342,11 +346,107 @@ public class BatterBotDriver
 				
 	}
 	
+	public void setupInterview()
+	{		
+				String[] sentence0 = {"Are you the best person for this job?"};
+				String[][] bucket0 = null;
+				String[] keys0 = {"null"};
+		
+				ResponseTemplate response0 = new ResponseTemplate(sentence0, bucket0, keys0)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence1 = {"Are you overqualified for this job?"};
+				String[][] bucket1 = null;
+				String[] keys1 = {"abc","overqualified"};
+		
+				ResponseTemplate response1 = new ResponseTemplate(sentence1, bucket1, keys1)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence2 = {"Describe a difficult experience at " , " and how you handled it."};
+				String[][] bucket2 = {{"home","work"}};
+				String[] keys2 = {"abc"};
+		
+				ResponseTemplate response2 = new ResponseTemplate(sentence2, bucket2, keys2)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence3 = {"Describe yourself"};
+				String[][] bucket3 = null;
+				String[] keys3 = {"abc"};
+		
+				ResponseTemplate response3 = new ResponseTemplate(sentence3, bucket3, keys3)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence4 = {"Describe your best boss and your worst boss"};
+				String[][] bucket4 = null;
+				String[] keys4 = {"abc"};
+		
+				ResponseTemplate response4 = new ResponseTemplate(sentence4, bucket4, keys4)
+				{
+					public double scaleRules()
+					{
+						if(questionsAsked()<5)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};				
+				response4.valediction=true;
+				
+				
+	}
+	
+	
 	public static void main(String[] args)
 	{	
-		BatterBotDriver bat = new BatterBotDriver(new IOconsole());
+		IOSocket io = new IOSocket();
+		io.setup();
+		BatterBotDriver bat = new BatterBotDriver(io);
 		
-		bat.setup();
+		//bat.setup();
+		bat.setupInterview();
+		
 		try
 		{
 		bat.cycle();
