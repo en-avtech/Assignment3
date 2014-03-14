@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * We use a driver class BatterBotDriver which contains all of the components
  * needed for the Chatter Bot. This class also stores the main function cycle()
@@ -38,7 +40,7 @@ public class BatterBotDriver
 		String input;
 		ResponseTemplate template = null;
 		
-		//IO.print("Hello");
+		IO.print("Hello");
 		
 		while(true)
 		{
@@ -880,26 +882,51 @@ public class BatterBotDriver
 	
 	public static void main(String[] args)
 	{	
-		IOSocket io = new IOSocket();
-		io.setup();
-		BatterBotDriver bat = new BatterBotDriver(io);
-		
-		//bat.setup();
-		bat.setupInterview();
 		System.setProperty("wordnet.database.dir", "C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
+		IOconsole ioconsole = new IOconsole();
+		BatterBotDriver bat = new BatterBotDriver(ioconsole);
 		
-		try
+		System.out.println("Connect to a server? (y/n):");
+		Scanner scan = new Scanner(System.in);
+		String input = scan.nextLine();
+		
+		if (input=="y")
 		{
-		bat.cycle();
+			IOSocket iosocket = new IOSocket();
+			iosocket.setup();
+			
+			BatterBotDriver interview = new BatterBotDriver(iosocket);
+			interview.setupInterview();
+			
+			try
+			{
+				interview.cycle();
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+				System.out.println(interview.LP.masterKeys);
+			}
+			
+			System.out.println(interview.LP.memTable.get("type"));
 		}
-		catch(Exception e)
+		else
 		{
-			e.printStackTrace();
-			System.out.println(bat.LP.masterKeys);
+			bat.setup();
+		
+			try
+			{
+				bat.cycle();
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+				System.out.println(bat.LP.masterKeys);
+			}
+			
+			System.out.println(bat.LP.memTable.get("type"));
+			
 		}
-		
-		System.out.println(bat.LP.memTable.get("type"));
-		
+	scan.close();
 	}
-	
 }

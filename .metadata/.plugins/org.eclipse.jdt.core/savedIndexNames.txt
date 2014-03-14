@@ -10,9 +10,10 @@ INDEX VERSION 1.126+C:\Users\Ephraim\Documents\GitHub\Assignment3\.metadata\.plu
 2914154122.index
 4155206848.index
 163172794.index
-3974580528.index
-1927558450.index
 4041092966.index
+1927558450.index
+3974580528.index
 1995173708.index
 3133528496.index
+1311274256.index
 4108727661.index

@@ -9,7 +9,7 @@ public class IOSocket implements IOInterface
 	
 	public void setup()
 	{
-		String host = "206.87.3.137";
+		String host = "206.87.3.136";
 		int port = 9999;
 		
 		try
