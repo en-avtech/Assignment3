@@ -521,7 +521,7 @@ public class BatterBotDriver
 					}
 				};
 				
-				String[] sentence10 = {"How do you handle pressure?"};
+				String[] sentence10 = {"How fo you handle pressure?"};
 				String[][] bucket10 = {{"home","work"}};
 				String[] keys10 = {"abc"};
 		
