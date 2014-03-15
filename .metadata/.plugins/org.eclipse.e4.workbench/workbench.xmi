@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_blfsEan-EeO8pvCPOETvUA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_blgTIKn-EeO8pvCPOETvUA" bindingContexts="_blgTKan-EeO8pvCPOETvUA">
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_blgTIKn-EeO8pvCPOETvUA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_bzN_Aqn-EeO8pvCPOETvUA" x="0" y="0" width="960" height="1032">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_blgTIKn-EeO8pvCPOETvUA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_bzN_Aqn-EeO8pvCPOETvUA" x="748" y="-17" width="960" height="1032">
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_bzN_Aqn-EeO8pvCPOETvUA" selectedElement="_bzOmEKn-EeO8pvCPOETvUA" horizontal="true">
@@ -69,7 +69,7 @@
           <tags>persp.viewSC:org.eclipse.wb.core.StructureView</tags>
           <tags>persp.viewSC:org.eclipse.wb.core.PaletteView</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_b57rAan-EeO8pvCPOETvUA" selectedElement="_b58SEKn-EeO8pvCPOETvUA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_b57rAqn-EeO8pvCPOETvUA" containerData="1472" selectedElement="_b57rA6n-EeO8pvCPOETvUA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_b57rAqn-EeO8pvCPOETvUA" containerData="2537" selectedElement="_b57rA6n-EeO8pvCPOETvUA">
               <children xsi:type="basic:PartStack" xmi:id="_b57rA6n-EeO8pvCPOETvUA" elementId="left" containerData="6000" selectedElement="_b57rBKn-EeO8pvCPOETvUA">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
@@ -86,7 +86,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_b57rDKn-EeO8pvCPOETvUA" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_b54nsKn-EeO8pvCPOETvUA"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_b58SEKn-EeO8pvCPOETvUA" containerData="8528" selectedElement="_b58SEan-EeO8pvCPOETvUA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_b58SEKn-EeO8pvCPOETvUA" containerData="7463" selectedElement="_b58SEan-EeO8pvCPOETvUA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_b58SEan-EeO8pvCPOETvUA" containerData="6931" selectedElement="_b58SEqn-EeO8pvCPOETvUA" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_b58SEqn-EeO8pvCPOETvUA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_b5IZwKn-EeO8pvCPOETvUA"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_b58SE6n-EeO8pvCPOETvUA" toBeRendered="false" containerData="2500">
@@ -147,7 +147,7 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_pHPkYKn_EeOn-py5zwspdA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BatterBotDriver.java" iconURI="platform:/plugin/org.eclipse.jdt.ui//icons/full/obj16/jcu_obj.gif" tooltip="BatterBot/src/BatterBotDriver.java" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BatterBot/src/BatterBotDriver.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;478&quot; selectionTopPixel=&quot;6780&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BatterBot/src/BatterBotDriver.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;20567&quot; selectionTopPixel=&quot;17597&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
         </children>
