@@ -346,6 +346,29 @@ public class BatterBotDriver
 				
 				ResponseTemplate response44 = new ResponseTemplate(sentence44, bucket44, keys44);
 				
+				String[] sentence45 = {"What about",". Is that the kind of question to ask Batman?"};
+				String[][] bucket45 = {{""}};
+				String[] keys45 = {"null"};
+		
+				ResponseTemplate response45 = new ResponseTemplate(sentence45, bucket45, keys45);
+				
+				String[] sentence46 = {"Who is "};
+				String[][] bucket46 = {{""}};
+				String[] keys46 = {"null"};
+		
+				ResponseTemplate response46 = new ResponseTemplate(sentence46, bucket46, keys46);
+				
+				String[] sentence47 = {"Can you specify what you want to know about "};
+				String[][] bucket47 = {{""}};
+				String[] keys47 = {"null"};
+		
+				ResponseTemplate response47 = new ResponseTemplate(sentence47, bucket47, keys47);
+				
+				String[] sentence48 = {"Why are you bothering Batman with questions about"};
+				String[][] bucket48 = {{""}};
+				String[] keys48 = {"null"};
+		
+				ResponseTemplate response48 = new ResponseTemplate(sentence48, bucket48, keys48);
 	}
 	
 	public void setupInterview()

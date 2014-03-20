@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * We use a driver class BatterBotDriver which contains all of the components
  * needed for the Chatter Bot. This class also stores the main function cycle()
@@ -38,7 +40,7 @@ public class BatterBotDriver
 		String input;
 		ResponseTemplate template = null;
 		
-		//IO.print("Hello");
+		IO.print("Hello");
 		
 		while(true)
 		{
@@ -519,7 +521,7 @@ public class BatterBotDriver
 					}
 				};
 				
-				String[] sentence10 = {"How fo you handle pressure?"};
+				String[] sentence10 = {"How do you handle pressure?"};
 				String[][] bucket10 = {{"home","work"}};
 				String[] keys10 = {"abc"};
 		
@@ -638,7 +640,7 @@ public class BatterBotDriver
 					}
 				};
 				
-				String[] sentence17 = {"Describe a difficult experience at " , " and how you handled it."};
+				String[] sentence17 = {"If people who know you were asked why you should be hired, what would they say?"};
 				String[][] bucket17 = {{"home","work"}};
 				String[] keys17 = {"abc"};
 		
@@ -654,30 +656,207 @@ public class BatterBotDriver
 							return 1;
 					}
 				};
-	}
-	
-	
-	public static void main(String[] args)
-	{	
-		IOSocket io = new IOSocket();
-		io.setup();
-		BatterBotDriver bat = new BatterBotDriver(io);
+				
+				String[] sentence18 = {"Is there a type of work environment which you prefer?"};
+				String[][] bucket18 = {{"home","work"}};
+				String[] keys18 = {"abc"};
 		
-		//bat.setup();
-		bat.setupInterview();
+				ResponseTemplate response18 = new ResponseTemplate(sentence18, bucket18, keys18)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence19 = {"Is there anything else I can tell you about the job and the company?"};
+				String[][] bucket19 = {{"home","work"}};
+				String[] keys19 = {"abc"};
 		
-		try
-		{
-		bat.cycle();
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			System.out.println(bat.LP.masterKeys);
-		}
+				ResponseTemplate response19 = new ResponseTemplate(sentence19, bucket19, keys19)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence20 = {"Tell me why you want to work here."};
+				String[][] bucket20 = {{"home","work"}};
+				String[] keys20 = {"abc"};
 		
-		System.out.println(bat.LP.memTable.get("type"));
-		
-	}
-	
-}
+				ResponseTemplate response20 = new ResponseTemplate(sentence20, bucket20, keys20)
+				{
+					public double scaleRules()
+					{
+						if(isAsked()==1)
+						{
+							return 0;
+						}
+						else
+							return 1;
+					}
+				};
+				
+				String[] sentence21 = {"What are you looking for in you nex "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57yn7k.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57yn7s.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynee.googlevideo.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynee.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynel.googlevideo.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynel.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57yney.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynl7.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynle.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "r9---sn-nx57ynll.googlevideo.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "s-v6exp1-ds.metric.gstatic.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": true
+            },
+            "s.imgur.com:443": {
+               "supports_spdy": true
+            },
+            "s.youtube.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": true
+            },
+            "s.youtube.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "s.ytimg.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": true
+            },
+            "s.ytimg.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "s0.2mdn.net:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "s2.googleusercontent.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": true
+            },
+            "s2.googleusercontent.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "s2.youtube.com:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": true
+            },
+            "s2.youtube.com:80": {
+               "alternate_protocol": {
+                  "port": 80,
+                  "protocol_str": "quic"
+               },
+               "supports_spdy": false
+            },
+            "scholar.google.ca:80": {
+               "alternate_protocol": {
+                  "
